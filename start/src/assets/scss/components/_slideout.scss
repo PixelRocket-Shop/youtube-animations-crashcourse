@@ -1,0 +1,37 @@
+/* Base styling - nothing to do with our animations/transitions */
+.slideout {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    padding: 4rem 2rem;
+    width: 300px;
+    box-shadow: -17px 4px 35px 5px rgba(0,0,0,0.09);
+}
+
+.slideout-close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    cursor: pointer;
+    width: 1rem;
+    height: 1rem;
+    display: block;
+}
+
+.slideout-navitem {
+    margin-bottom: .35rem;
+
+    a {
+        text-decoration: none;
+        color: $body-color;
+        font-size: 1.2rem;
+    }
+}
+
+
+
+
+
+/* Code related to transitions/animations goes here */

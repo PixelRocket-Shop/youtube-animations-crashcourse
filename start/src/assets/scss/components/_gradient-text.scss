@@ -1,0 +1,18 @@
+/* base styling - nothing to do with our animation/transition */
+.gradient-text {
+    font-size: 5rem;
+    position: relative;
+    display: table;
+    margin: 0 auto;
+    color: transparent;
+
+    &:before {
+        display: block;
+        color: white;
+        position: absolute;
+    }
+}
+
+
+
+/* Code related to our animation goes here */

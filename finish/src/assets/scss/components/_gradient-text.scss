@@ -1,0 +1,109 @@
+/* base styling - nothing to do with our animation/transition */
+.gradient-text {
+    font-size: 5rem;
+    position: relative;
+    display: table;
+    margin: 0 auto;
+    color: transparent;
+
+    &:before {
+        display: block;
+        color: white;
+        position: absolute;
+    }
+}
+
+
+
+/* Code related to our animation goes here */
+.gradient-text {
+    --content: "Create Account";
+    --start-color: #007cf0;
+    --end-color: #00dfd8;
+
+    &:before {
+        content: var(--content);
+        z-index: 1;
+        animation: fadeInOutOne var(--theme-slideout-transition-in) infinite 9s;
+    }
+
+    span {
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-image: linear-gradient(90deg, var(--start-color), var(--end-color));
+    }
+}
+
+.gradient-text:nth-of-type(2) {
+    --content: "Setup Form";
+    --start-color: #7928ca;
+    --end-color: #ff0080;
+
+    &:before {
+        animation: fadeInOutTwo var(--theme-slideout-transition-in) infinite 9s;
+    }
+}
+
+.gradient-text:nth-of-type(3) {
+    --content: "Publish";
+    --start-color: #7928ca;
+    --end-color: #f9cb28;
+
+    &:before {
+        animation: fadeInOutThree var(--theme-slideout-transition-in) infinite 9s;
+    }
+}
+
+@keyframes fadeInOutOne {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+    33% {
+        opacity: 100%;
+    }
+    92% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeInOutTwo {
+    0% {
+        opacity: 100%;
+    }
+    25% {
+        opacity: 100%;
+    }
+    33% {
+        opacity: 0;
+    }
+    58% {
+        opacity: 0;
+    }
+    66% {
+        opacity: 100%
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes fadeInOutThree {
+    0% {
+        opacity: 100%;
+    }
+    58% {
+        opacity: 100%;
+    }
+    66% {
+        opacity: 0;
+    }
+    92% {
+        opacity: 0;
+    }
+}

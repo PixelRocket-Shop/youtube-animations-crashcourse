@@ -1,0 +1,24 @@
+.navbar {
+    .btn-link {
+        color: $text-muted;
+        text-decoration: none;
+    }
+}
+
+.btn-white {
+    background: white;
+}
+
+.btn-open-slideout {
+    overflow: hidden;
+    padding: 0;
+}
+
+.btn-open-slideout span {
+    background: $dark;
+    display: block;
+    height: .25rem;
+    width: 2rem;
+}
+
+

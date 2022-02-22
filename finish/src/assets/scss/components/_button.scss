@@ -1,0 +1,37 @@
+.navbar {
+    .btn-link {
+        color: $text-muted;
+        text-decoration: none;
+    }
+}
+
+.btn-white {
+    background: white;
+}
+
+.btn-open-slideout {
+    overflow: hidden;
+    padding: 0;
+
+    * {
+        pointer-events: none;
+        transition:  transform ease-in .2s;
+    }
+}
+
+.btn-open-slideout span {
+    background: $dark;
+    display: block;
+    height: .25rem;
+    width: 2rem;
+}
+
+.btn-open-slideout:hover span:nth-of-type(1) {
+    transform: translateX(-50%);
+}
+.btn-open-slideout:hover span:nth-of-type(2) {
+    transform: scaleX(.5);
+}
+.btn-open-slideout:hover span:nth-of-type(3) {
+    transform: translateX(50%);
+}
